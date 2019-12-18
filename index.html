@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Lucy Cook</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oxn7pnu.css">
+    <link href='style.css' type='text/css' rel='stylesheet' />
+    <link rel="shortcut icon" type="image/png" src="favicon.png">
+</head>
+
+    
+<body>
+    
+    <nav>
+        <div class="navlogo"><a href="index.html"><img class="navlogoimg" src="homeicon.png"></a></div>
+        <div class="navlinks">
+        <a href="index.html" style="color: #000; margin-right: 2vw;">Work</a>
+        <a href="about.html">About</a></div>
+        </nav>
+
+    <section class="homegrid">
+        <div class="title">
+            <div class="animate fadeIn">
+            <h3>Hi I'm</h3>
+            <h1>Lucy Cook</h1> 
+            <h4>A User Experience Designer, with a passion for innovative UI designs and a love for fun illustrations.</h4>
+            <a class="homebutton" href="#work">Check out my work!</a>
+            </div>
+        </div>
+
+        <div class="homeimg"><img class="animate fadeIn" src="homeillustration.png" style="width:80%"></div>
+    </section>
+    
+    <section id="work" class="work_grid">
+        
+        <div class="work_item project_uxpert">
+            <a href="uxpert.html">
+                <div class="project_img">
+                    <img class="uxpertimg" src="uxpertimg.png">
+                </div>
+                <div class="project_info">
+                    <div class="project_heading">
+                        <h7>UXpert</h7>
+                        <h6>An online learning platform teaching people about UX design.</h6>
+                    </div>
+                </div>
+            </a>    
+        </div>
+        
+        <div class="work_item project_holmes">
+            <a href="holmeswebsite.html">
+                <div class="project_img">
+                    <img class="holmesimg" src="holmesimg.png">
+                </div>
+                <div class="project_info">
+                    <div class="project_heading">
+                        <h7>Heroes &amp; Villains</h7>
+                        <h6>Telling the story of Sherlock Holmes.</h6>
+                    </div>
+                </div>
+            </a>    
+        </div>
+        
+        <div class="work_item project_branding">
+            <a href="branding.html">
+                <div class="project_img">
+                    <img class="brandimg" src="mockup3.png">
+                </div>
+                <div class="project_info">
+                    <div class="project_heading">
+                        <h7>Personal Branding</h7>
+                        <h6>Creating a visual identity.</h6>
+                    </div>
+                </div>
+            </a>    
+        </div>
+        
+        <div class="work_item project_sideproj">
+            <a href="sideproj.html">
+                <div class="project_img">
+                    <img class="sideprojimg" src="sideproj.png">
+                </div>
+                <div class="project_info">
+                    <div class="project_heading">
+                        <h7>Side Projects</h7>
+                        <h6>Find out what I'm working on outside of University projects.</h6>
+                    </div>
+                </div>
+            </a>    
+        </div>
+        
+        <div class="work_item moreprojects">
+            <a target="blank" href="https://loosecookie.tumblr.com/post/188279009431/all-projects">
+                <div class="project_info1">
+                    <div class="project_heading">
+                        <h7>Older Projects</h7>
+                        <h6>Interested in reading more?</h6>
+                    </div>
+                </div>
+            </a>    
+        </div>
+        
+    </section>
+        
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+    
+    
+    
+    
+    <footer class="footergrid">
+            <div class="email">
+                <h6>Get in touch at</h6><br>
+                <a class="emailtext" href="mailto:me@lucycookdesigns.com" target="blank" >lucycookdesigns.com</a>
+            </div>
+            
+            <div class="icons"><h6>Or find more work on my social media</h6><br>
+            <a href="http://loosecookie.tumblr.com" target="blank" class="fa fa-tumblr"></a>
+            <a href="http://instagram.com/lucycookdesigns" target="blank" class="fa fa-instagram"></a>
+            <a href="mailto:lcook357@outlook.com" target="blank" class="fa fa-envelope"></a>
+            <a href="https://www.linkedin.com/in/lucy-cook-404449175/" target="blank" class="fa fa-linkedin"></a>
+            <a href="http://twitter.com/lucycookdesigns" target="blank" class="fa fa-twitter"></a>
+            </div>
+    </footer>  
+
+
+</body>
