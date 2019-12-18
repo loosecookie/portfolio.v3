@@ -1,0 +1,1831 @@
+/*------------------- CSS RESET -----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+body {
+    width: 100%;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight:normal;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.8em;
+}
+
+/*----------------- TYPOGRAPHY ------------------------*/
+
+h3 { /*Hi! I'm*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 4vw;
+    margin-right: 31vw;
+}
+
+h1 { /*LUCY COOK*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 10vw;
+    margin-right: 3vw;
+}
+
+h4 { /*Welcome to my space*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 1.94vw;
+    line-height: 2.1vw;
+    text-align: left;
+    margin: 0vw 3vw 0vw 12vw;
+    
+}
+
+h5{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+h6{ /*CV title*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 1.6vw;
+    padding-top: 5px;
+}
+
+h7 { /*About title*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+h8{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+h2{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 2.2vw; 
+    color: #D898D2;
+}
+
+p {
+    font-size: 1.8vw;
+    margin: 1vw 2vw 5vw 10vw;
+    line-height: 2.2vw;
+}
+
+p2 {
+    font-size: 1.5vw;
+    line-height: 1.8vw;}
+
+p3 {font-size: 2vw;
+    line-height: 2.2vw;}
+
+ p4 {
+    font-size: 1.5vw;
+    line-height: 1.7vw;}
+
+.titles{
+    font-size: 4vw;
+    margin: 5vw 0vw 0vw 10vw;
+}
+
+/*------------------- LINKS ----------------------------*/
+
+a {
+    color: #000;
+    font-family: 'Rift-soft', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in;
+}
+
+a:hover{
+    color: #D898D2;
+}
+
+a.iconhover:hover{
+    opacity: 0.5; transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+.button {
+    background-color: #D898D2;
+    box-shadow:4px 2px 10px #D898D2; 
+    margin-top: 15px;
+    padding: 1.3vw 3.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    color: white;
+    border-radius: 20px;
+} 
+
+.button:hover {
+    color: white;
+    transform: scale(1.05); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+} 
+
+#aboutbutton {
+    margin-right: 11vw;}
+
+.homebutton {
+    background-color: #D898D2;
+    box-shadow:4px 2px 10px #D898D2; 
+    padding: 1.3vw 3.5vw;
+    margin-top: 3vw;
+    margin-right: 10vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    color: white;
+    border-radius: 20px;
+} 
+
+.homebutton:hover {
+    color: white;
+    transform: scale(1.05); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+} 
+
+  hr.style5 { 
+    border: 0; 
+    height: 3px; 
+    width: 400px;
+    margin: 1.5vw 0vw 1.5vw 10vw;
+    background-color: #D898D2;
+  }
+
+.border3 {
+    border-style: solid;
+    border-width: 8px;
+    border-color: #FAECF5;
+}
+
+#border3 {
+    border-style: solid;
+    border-width: 8px;
+    border-color: #FAECF5;
+}
+
+.border {
+    border-style: solid;
+    border-width: 8px;
+    border-color: #D898D2;
+}
+
+#border {
+    border-style: solid;
+    border-width: 8px;
+    border-color: #D898D2;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animate {
+    animation: 0.5s ease 1s normal forwards 1 fadein;
+    -webkit-animation: 0.5s ease 0.5s normal forwards 1 fadein;
+    opacity: 0;}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+/*------------------ NAVIGATION -------------------------*/
+
+nav {
+    display: grid;
+    z-index:1;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+    "navlogo navlinks";
+    background-color: #D898D2;
+    position: fixed;
+    width: 100%;}
+
+.navlogo {
+    grid-area: navlogo;
+    padding: 10px 0px 10px 4vw;}
+
+.navlogoimg{
+    width: 40%;
+    opacity: 0.7;
+    transition: opacity .2s ease-out;
+}
+
+.navlogoimg:hover{
+    opacity: 1;
+}
+
+.navlinks {
+    grid-area: navlinks;
+    text-align: right;
+    text-align: right;
+    margin-right: 4vw;
+    font-family: 'rift-soft', sans-serif;
+    letter-spacing: 1px;
+    font-size:2vw;
+    padding: 1vw 0vw;}
+
+nav a:link {color: #FDECF3}
+
+nav a:visited {color: #FDECF3;}
+
+nav a:hover {
+    -webkit-transition: all 0.2s ease-in;
+    color: #000}
+
+/*------------------ CSS GRID - HOME NAV -------------------------*/
+
+.homegrid {
+    display: grid;
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-image: url(homebackground.png);
+    background-size: cover;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "title homeimg";
+}
+
+.title {
+    grid-area: title;
+    text-align:right;
+    padding-top:14vw;
+    padding-bottom: 14vw;
+}
+
+.homeimg {grid-area: homeimg; 
+    margin: 12vw 8vw 15vw 1vw;}
+
+
+.work_grid {
+    display: grid;
+    margin: 80px 120px 80px 80px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "project_uxpert project_holmes"
+    "project_branding project_sideproj"
+    "moreprojects moreporjects";
+}
+
+.project_uxpert{grid-area: project_uxpert;}
+.project_holmes{grid-area: project_holmes;}
+.project_branding{grid-area: project_branding;}
+.project_sideproj{grid-area: project_sideproj;}
+.moreprojects{grid-area: moreprojects;}
+    
+    .work_item{
+        border-radius: 5px 5px 0px 0px;
+        box-shadow:2px 2px 10px #e5e5e5;
+    }
+
+    .project_img {
+        width: 100%;
+        height: 380px;
+        background-color: #F4D7EA;
+        border-radius: 5px 5px 0px 0px;
+        overflow: hidden;
+    }
+
+    .project_info {
+        width: 100%;
+        height: 80px;
+        background-color: #FAECF5;
+        border-radius: 0px 0px 5px 5px;
+        overflow: hidden;
+        padding: 20px 0px; 
+    }
+
+    .project_info1 {
+        width: 100%;
+        height: 80px;
+        background-color: #FAECF5;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 20px 0px;
+    }
+
+    .project_heading {
+        padding: 0px 20px;}
+
+.uxpertimg{
+    padding: 2vw 0.5vw;
+    width: 97%;}
+
+.holmesimg{
+    padding: 0.5vw 0vw;
+    width: 97%;}
+
+.brandimg{
+    padding: 0.5vw 0vw 0vw 1vw;
+    width: 100%;}
+
+.sideprojimg{
+    padding: 2vw 2vw;
+    width: 95%;}
+
+/*------------------ CSS GRID - ABOUT -------------------------*/
+
+
+.aboutgrid {
+    display: grid;
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-image: url(homebackground.png);
+    background-size: cover;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "title aboutimg";
+}
+
+.title {
+    grid-area: title;
+    text-align:right;
+    padding-top:14vw;
+    padding-bottom: 14vw;
+}
+
+
+.aboutimg {grid-area: aboutimg; 
+    margin: 10vw 10vw 0vw 8vw;}
+
+
+/*------------------ CSS GRID - HOLMES -------------------------*/
+    .holmesgrid {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-areas: 
+        "holmesintro holmespicture holmespicture"
+        "holmes7 holmes7 museumimg3"
+        "holmes1 holmes1 museumimg3"
+        "holmes2 holmes2 holmesoldnew"
+        "visualimg1 visualimg2 visualimg2"
+        "holmes3 holmes3 typographyimg"
+        "holmes4 holmes4 holmescolour3"
+        "holmescolour1 holmescolour2 holmescolour2" 
+        "holmes5 holmes5 holmesidea1"
+        "holmes6 holmes6 holmes6"
+        "holmes8 holmes8 holmes8"
+        "holmesprototype holmesprototype holmesprototype"
+        "holmes9 holmes9 holmes9"
+        "holmes10 holmes10 holmes10"
+        "holmeswebsite holmeswebsite1 holmeswebsite1"
+        "holmesreflection holmesreflection holmesreflection"
+        "holmes11 holmes11 holmes11";
+    }
+
+.holmesintro{ 
+    grid-area: holmesintro;
+    background-color: #FFEBF5;
+    padding: 6vw 0vw 3vw 0vw;}
+.holmespicture {
+    grid-area: holmespicture;
+    background-color: #FFEBF5;
+    padding: 7vw 12vw 0vw 2vw;}
+
+.holmes7 {grid-area: holmes7;
+    margin: 8vw 2vw 0vw 10vw;}
+.holmes1 {grid-area: holmes1;
+    margin: 1.5vw 2vw 6vw 10vw;}
+.museumimg3 {grid-area:museumimg3;
+    padding: 8vw 7vw 0vw 5vw;}
+
+.holmes2 {grid-area: holmes2;
+    padding: 0vw 2vw 0vw 10vw;}
+.holmesoldnew {grid-area: holmesoldnew;
+    padding: 0vw 10vw 0vw 0vw;}
+.visualimg1 {grid-area:visualimg1;
+    padding: 1vw 1vw 0vw 10vw;}
+.visualimg2 {grid-area:visualimg2;
+    padding: 1vw 10vw 0vw 4.5vw;}
+
+.holmes3 {grid-area: holmes3;
+    padding: 6vw 2vw 0vw 10vw;}
+.typographyimg {grid-area: typographyimg;
+    padding: 5vw 12vw 0vw 3vw;}
+
+.holmes4 {grid-area: holmes4;
+    padding: 3vw 2vw 0vw 10vw;}
+.holmescolour1 {grid-area: holmescolour1;
+    padding: 1vw 0vw 0vw 10vw;}
+.holmescolour2 {grid-area: holmescolour2;
+    padding: 1vw 10vw 0vw 6vw;}
+.holmescolour3 {grid-area: holmescolour3;
+    padding: 4vw 10vw 0vw 3vw;}
+
+.holmes5 {grid-area: holmes5;
+    padding: 4vw 2vw 0vw 10vw;}
+.holmesidea1 {grid-area: holmesidea1;
+    padding: 4vw 10vw 0vw 0vw;}
+
+.holmes6 {grid-area: holmes6;
+    padding: 4vw 10vw 0vw 10vw;}
+.holmes8 {grid-area: holmes8;
+    padding: 2vw 0vw 2vw 0vw; text-align: center;}
+.holmesprototype {grid-area: holmesprototype;
+    padding: 2vw 10vw 0vw 10vw;}
+
+.holmes9 {grid-area: holmes9;
+    padding: 4vw 10vw 0vw 10vw;}
+.holmes10 {grid-area: holmes10;
+    padding: 2vw 0vw 2vw 0vw; text-align: center;}
+.holmeswebsite {grid-area: holmeswebsite;
+    padding: 2vw 0.5vw 0vw 10vw;}
+.holmeswebsite1 {grid-area: holmeswebsite1;
+    padding: 2vw 10vw 0vw 6vw;}
+
+.holmesreflection {grid-area: holmesreflection;
+    margin: 5vw 10vw 0vw 10vw;}
+.holmes11 {grid-area: holmes11;
+    padding: 2vw 0vw 6vw 0vw; text-align: center;}
+
+.video1{
+    width: 100%;
+    height: auto;
+}
+
+/*------------------ CSS GRID - UXPERT -------------------------*/
+    .uxpertgrid {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-areas: 
+        "uxpertintro uxpertpicture uxpertpicture"
+        "uxpert1 uxpert1 monzoimg"
+        "uxpert2 uxpert2 monzoimg"
+        "uxpert3 uxpert3 uxpert3"
+        "uxpert5 uxpert5 uxpert5"
+        "uxpert11 uxpert11 survey"
+        "uxpert111 uxpert111 survey"
+        "persona persona cardsort"
+        "uxpert6 uxpert6 additionimg"
+        "uxpert61 uxpert61 additionimg"
+        "uxpert7 uxpert7 forest"
+        "uxpert14 uxpert14 pattern2"
+        "patterninspo patterninspo pattern1" 
+        "uxpert8 uxpert8 pattern"
+        "uxpert12 uxpert12 uxpertbrand"
+        "uxpert9 uxpert9 uxpertflow"
+        "uxpertwireframes elementcollage elementcollage"
+        "uxpert10 uxpert10 uxpert10"
+        "uxpertprototype uxpertprototype uxpertprototype"
+        "uxpertvideo uxpertvideo uxpertvideo"
+        "uxpertreflection uxpertreflection uxpertreflection"
+        "uxpertreflection2 uxpertreflection2 uxpertreflection2"
+        "uxpertresearch uxpertresearch uxpertresearch"
+}
+
+.uxpertintro {grid-area: uxpertintro;
+    background-color: #FFEBF5;
+    padding: 6vw 0vw 3vw 0vw;}
+.uxpertpicture {grid-area: uxpertpicture;
+    background-color: #FFEBF5;
+    padding: 9vw 12vw 0vw 5vw;}
+.uxpert1{grid-area: uxpert1;
+    padding: 6vw 1vw 3vw 10vw;}
+.uxpert2 {grid-area: uxpert2;
+    padding: 0vw 1vw 6vw 10vw;}
+.monzoimg {grid-area: monzoimg;
+    padding: 6vw 10vw 0vw 1vw;}
+.uxpert3 {grid-area: uxpert3;
+    padding: 0vw 10vw 0vw 10vw;}
+.uxpert5 {grid-area: uxpert5;
+    padding: 1.3vw 10vw 0vw 10vw;}
+.uxpert6 {grid-area: uxpert6;
+    padding: 5vw 2vw 0vw 10vw;}
+.uxpert61 {grid-area: uxpert61;
+    padding: 2vw 2vw 0vw 10vw;}
+.additionimg {grid-area: additionimg;
+    padding: 6vw 10vw 0vw 0vw;}
+.uxpert7 {grid-area: uxpert7;
+    padding: 6vw 1vw 0vw 10vw;}
+.uxpert11 {grid-area: uxpert11;
+    padding: 5vw 1vw 0vw 10vw;}
+.uxpert111 {grid-area: uxpert111;
+    padding: 0vw 1vw 0vw 10vw;}
+.survey {grid-area: survey;
+    padding: 5vw 10.5vw 0vw 2vw;}
+.cardsort {grid-area: cardsort;
+    padding: 1vw 10vw 0vw 11vw;}
+.persona {grid-area: persona;
+    padding: 1vw 0vw 0vw 10vw;}
+.forest {grid-area: forest;
+    padding: 6vw 8vw 0vw 10vw;}
+.uxpert14 {grid-area: uxpert14;
+    padding: 7vw 1vw 0vw 10vw;}
+.pattern2 {grid-area: pattern2;
+    padding: 5vw 10vw 0vw 1vw;}
+.patterninspo {grid-area: patterninspo;
+    padding: 1vw 1vw 0vw 10vw;}
+.pattern1 {grid-area: pattern1;
+    padding: 1vw 10vw 0vw 1vw;}
+.uxpert8 {grid-area: uxpert8;
+    padding: 4vw 0vw 0vw 10vw;}
+.pattern {grid-area: pattern;
+    padding: 2vw 8vw 0vw 6vw;}
+.uxpert12 {grid-area: uxpert12;
+    padding: 4vw 0vw 1vw 10vw;}
+.uxpertbrand {grid-area: uxpertbrand;
+    padding: 4vw 10vw 0vw 0vw;}
+.uxpert9 {grid-area: uxpert9;
+    padding: 4vw 2vw 1vw 10vw;}
+.uxpertflow {grid-area: uxpertflow;
+    padding: 3vw 10vw 0vw 0vw;}
+.uxpertwireframes {grid-area: uxpertwireframes;
+    padding: 1vw 0vw 0vw 10vw;}
+.elementcollage {grid-area: elementcollage;
+    padding: 1vw 10vw 0vw 7vw;}
+.uxpert10 {grid-area: uxpert10;
+    padding: 6vw 10vw 0vw 10vw;}
+.uxpertprototype {grid-area: uxpertprototype;
+    padding: 0vw 0vw 4vw 0vw; text-align: center;}
+.uxpertvideo {grid-area: uxpertvideo;
+    padding: 0vw 17vw 0vw 10vw;}
+.uxpertreflection {grid-area: uxpertreflection;
+    padding: 6vw 10vw 0vw 10vw;}
+.uxpertreflection2 {grid-area: uxpertreflection2;
+    padding: 1vw 10vw 2vw 10vw;}
+.uxpertresearch {grid-area: uxpertresearch;
+    padding: 0vw 0vw 4vw 0vw; text-align: center;}
+
+.video{
+    width: 110%;
+    height: auto;
+}
+
+
+/*------------------ CSS GRID - PERSONAL BRANDING -------------------------*/
+
+.brandinggrid {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: 
+    "intro1 picture1 picture1"
+    "text2 text2 briefimg"
+    "monogram monogram monogramimg1"
+    "monogramimg2 monogramimg3 monogramimg3"
+    "monogramimg4 monogramimg5 monogramimg5"
+    "wordmark wordmark wordmarkimg1"
+    "wordmarkimg2 wordmarkimg3 wordmarkimg3"
+    "wordmarkimg4 wordmarkimg5 wordmarkimg5"
+    "visualmark visualmark visualmarkimg1"
+    "visualmarkimg2 visualmarkimg3 visualmarkimg3"
+    "visualmarkimg4 visualmarkimg5 visualmarkimg5"
+    "visualextension visualextension visualextensionimg1"
+    "visualextensionimg2 visualextensionimg3 visualextensionimg3"
+    "brandguidelines brandguidelines brandguidelinesimg"
+    "brandguidelinesbtn brandguidelinesbtn brandguidelinesimg"
+    "reflection1 reflection1 reflection1"
+    "researchnotes researchnotes researchnotes";
+    }
+
+    .intro1 {grid-area: intro1;
+    background-color: #FFEBF5;
+    padding-bottom: 3vw;
+    padding-top: 6vw;}
+    .picture1 {grid-area:picture1;
+    background-color: #FFEBF5;
+    padding: 6vw 0vw 0vw 3vw;}
+
+    .text2 {grid-area: text2;
+    margin: 8vw 0vw 0vw 10vw;}
+    .briefimg {grid-area: briefimg;
+    padding: 8vw 15vw 0vw 5vw;}
+
+    .monogram {grid-area: monogram;
+    padding: 4vw 0vw 0vw 10vw;}
+    .monogramimg1 {grid-area: monogramimg1;
+    padding: 4vw 15vw 0vw 3vw;}
+
+    .monogramimg2 {grid-area: monogramimg2;
+    padding: 2vw 1vw 0vw 10vw;}
+    .monogramimg3 {grid-area: monogramimg3;
+     padding: 2vw 10vw 0vw 6vw;}
+    .monogramimg4 {grid-area: monogramimg4;
+    padding: 1vw 1vw 0vw 10vw;}
+    .monogramimg5 {grid-area: monogramimg5;
+    padding: 1vw 10vw 0vw 6vw;}
+
+    .wordmark {grid-area: wordmark;
+    padding: 6vw 1vw 0vw 10vw;}
+    .wordmarkimg1 {grid-area: wordmarkimg1;
+    padding: 6vw 8vw 0vw 3vw;}
+    .wordmarkimg2 {grid-area: wordmarkimg2;
+    padding: 2vw 1vw 0vw 10vw;}
+    .wordmarkimg3 {grid-area: wordmarkimg3;
+     padding: 2vw 10vw 0vw 6vw;}
+    .wordmarkimg4 {grid-area: wordmarkimg4;
+    padding: 1vw 1vw 0vw 10vw;}
+    .wordmarkimg5 {grid-area: wordmarkimg5;
+    padding: 1vw 10vw 0vw 6vw;}
+
+    .visualmark {grid-area: visualmark;
+    padding: 6vw 1vw 0vw 10vw;}
+    .visualmarkimg1 {grid-area: visualmarkimg1;
+    padding: 6vw 10vw 0vw 6vw;}
+    .visualmarkimg2 {grid-area: visualmarkimg2;
+    padding: 2vw 1vw 0vw 10vw;}
+    .visualmarkimg3 {grid-area: visualmarkimg3;
+    padding: 2vw 10vw 0vw 6vw;}
+    .visualmarkimg4 {grid-area: visualmarkimg4;
+    padding: 1vw 1vw 0vw 10vw;}
+    .visualmarkimg5 {grid-area: visualmarkimg5;
+    padding: 1vw 10vw 0vw 6vw;}
+
+    .visualextension {grid-area: visualextension;
+    padding: 6vw 1vw 0vw 10vw;}
+    .visualextensionimg1 {grid-area: visualextensionimg1;
+    margin: 4vw 10vw 0vw 10vw;}
+    .visualextensionimg2 {grid-area: visualextensionimg2;
+    margin: 1vw 0vw 0vw 10vw;}
+    .visualextensionimg3 {grid-area: visualextensionimg3;
+    margin: 1vw 10vw 0vw 6vw;}
+
+    .brandguidelines {grid-area: brandguidelines;
+    padding: 6vw 1vw 0vw 10vw;}
+    .brandguidelinesbtn {grid-area: brandguidelinesbtn;
+    padding: 0vw 0vw 0vw 10vw;}
+    .brandguidelinesimg {grid-area: brandguidelinesimg;
+    padding: 4vw 10vw 0vw 0vw;}
+
+    .reflection1 {grid-area: reflection1;
+    margin: 5vw 10vw 4vw 10vw;}
+    .researchnotes {Grid-area: researchnotes;
+    padding: 0vw 0vw 6vw 0vw; text-align: center;}
+
+
+/*------------------ CSS GRID - SIDE PROJECT -------------------------*/
+
+.sideproj_grid {
+    display: grid;
+    padding: 100px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "project_scaffold project_illustrations project_leadtheway"
+    "project_bingo project_sbdtent project_sbdposter"; 
+}
+
+.project_scaffold{grid-area: project_scaffold;}
+.project_illustrations {grid-area: project_illustrations;}
+.project_leadtheway {grid-area: project_leadtheway;}
+.project_bingo {grid-area: project_bingo;}
+.project_sbdtent {grid-area: project_sbdtent;}
+.project_sbdposter {grid-area: project_sbdposter;}
+
+    
+    .work_item2{
+        border-radius: 5px 5px 0px 0px;
+        box-shadow:2px 2px 10px #e5e5e5;
+    }
+
+    .project_img2 {
+        width: 100%;
+        height: 360px;
+        background-color: #F4D7EA;
+        border-radius: 5px 5px 0px 0px;
+        overflow: hidden;
+    }
+
+    .project_info2 {
+        width: 100%;
+        background-color: #FAECF5;
+        border-radius: 0px 0px 5px 5px;
+        overflow: hidden;
+        padding: 20px 0px; 
+    }
+
+    .project_heading2 {
+        padding: 0px 20px;}
+
+.scaffoldimg{
+    width: 100%;}
+
+.illustrationsimg{
+    width: 100%;}
+
+.leadthewayimg{
+    width: 100%;}
+
+.bingoimg{
+    width: 100%;}
+
+.sbdtentimg{
+    width: 100%;}
+
+.sbdposterimg{
+    width: 100%;}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#overlay4 {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#overlay5 {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#overlay6 {
+    position: fixed;
+    display: none;
+    width: 94%;
+    height: 47vw;
+    top: 3vw;
+    left: 3vw;
+    right: 3vw;
+    bottom: 3vw;
+    margin-top: 4vw;
+    background-color: #F4D7EA;;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+    .scaffold{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "scaffoldtext scaffoldimg1"}
+
+    .scaffoldtext{grid-area:scaffoldtext;}
+    .scaffoldimg1 {grid-area:scaffoldimg1;
+    padding-left: 4vw;}
+
+
+
+    .digitalillustrations{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "illustrationtext illustrationimg"}
+
+    .illustrationtext {grid-area:illustrationtext;}
+    .illustrationimg {grid-area:illustrationimg;
+    padding-left: 4vw; padding-right: 4vw;}
+
+
+    .leadtheway{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "leadthewaytext leadthewayimg1"}
+
+    .leadthewaytext {grid-area: leadthewaytext;}
+    .leadthewayimg1 {grid-area: leadthewayimg1;
+    padding-left: 4vw;}
+
+
+    .bingo{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "bingotext bingoimg1"}
+
+    .bingotext {grid-area: bingotext;}
+    .bingoimg1 {grid-area: bingoimg1;
+    padding-left: 4vw; padding-right: 4vw;}
+
+    .viewhere{
+    font-family: 'acumin-pro-condensed', sans-serif;
+    color: white;}
+
+
+    .sbd{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas:
+    "sbdtext sbdimg1"}
+
+    .sbdtext{grid-area: sbdtext;}
+    .sbdimg1 {grid-area: sbdimg1;
+    padding-left: 4vw; padding-right: 4vw;}
+
+    .sbd2{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "sbd2text sbd2img"
+    }
+
+    .sbd2text {grid-area: sbd2text;}
+    .sbd2img {grid-area: sbd2img;
+    padding-left: 2vw;}
+
+/*------------------ CSS GRID - CV -------------------------*/
+
+.cvgrid {
+    display: grid;
+    padding: 0vw 15vw 0vw 15vw;
+    padding-bottom: 5vw;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas:
+    
+    "title2 title2 title2"
+    "date3 content3 content3"
+    "title1 title1 title1"
+    "date1 content1 content1"
+    "date7 content7 content7"
+    "date2 content2 content2"
+    "title3 title4 title4"
+    "content5 content6 button2";
+}
+
+.title1 {grid-area: title1;
+    margin: 4vw 0vw 0vw 0vw;}
+
+.date1 {grid-area: date1;
+padding: 2vw 0vw 0vw 0vw;}
+.content1 {grid-area: content1;
+padding: 2vw 0vw 0vw 0vw;}
+
+.title2 {grid-area: title2;
+    margin: 4vw 0vw 0vw 0vw;}
+
+.date2 {grid-area: date2;
+padding: 2vw 0vw 0vw 0vw;}
+.content2 {grid-area: content2;
+padding: 2vw 0vw 0vw 0vw;}
+
+.date7 {grid-area: date7;
+padding: 2vw 0vw 0vw 0vw;}
+.content7 {grid-area: content7;
+padding: 2vw 0vw 0vw 0vw;}
+
+.date3 {grid-area: date3;
+padding: 2vw 0vw 0vw 0vw;}
+.content3 {grid-area: content3;
+padding: 2vw 0vw 0vw 0vw;}
+
+.title3 {grid-area: title3;
+    margin: 4vw 0vw 1vw 0vw;}
+.content5 {grid-area: content5;
+padding-left: 0vw;}
+.title4 {grid-area: title4;
+    margin: 4vw 0vw 1vw 0vw;}
+.content6 {grid-area: content6;
+    padding-left: 0vw;}
+
+
+
+/*-------------------- FOOTER ----------------------*/
+
+.footergrid{
+    text-align: center;
+    background-color: #FAECF5;
+    display: grid;
+    padding: 0vw 15vw 0vw 15vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "email icons"
+}
+
+.email {
+    grid-area:email;
+    padding: 50px;
+}
+
+.emailtext{
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 2.5vw;
+}
+
+.icons {
+    grid-area: icons;
+    padding: 50px;
+}
+
+.fa {
+    padding:10px;
+    margin: 0 7px;
+    color: #fff;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #D898D2;
+}
+
+.fa:hover {
+    color: white;
+    transform: scale(1.1); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+} 
+
+/*-------------------- MEDIA QUERIES - IPAD ----------------------*/
+@media (max-width: 992px) {
+
+/*----- HOME PAGE -------*/      
+    
+    .navlogoimg {width: 45%;}
+    .navlinks {font-size: 2.5vw;}
+    
+    
+    .homegrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "title homeimg";}
+    
+    .title {
+    text-align:right;
+    padding-top:18vw;
+    padding-bottom: 14vw;}
+
+    .homeimg {margin: 18vw 8vw 15vw 1vw;}
+    
+    h3 {font-size: 5vw;
+        text-align: left;
+        margin: 0vw 12vw;}
+
+    h1 {font-size: 10vw;
+        padding: 1vw 1vw 1vw 0vw;
+        margin-right: 2vw;}
+
+    h4 {font-size: 2vw;
+        text-align: left;
+        margin-right: 2vw;}
+    
+    .homebutton {
+        padding: 2vw 6vw;
+        margin-top: 5vw;
+        margin-right: 6vw;
+        font-size: 2.5vw;} 
+    
+    .work_grid {margin: 80px 100px 80px 60px;}
+    .project_img {height: 280px;}
+    h6{font-size: 2vw;}
+    h7 {font-size: 3.5vw;}
+
+    
+    .icons {padding: 50px 20px;}
+    .fa {
+    margin: 0 5px;
+    font-size: 20px;
+    width: 20px;}
+    
+    
+/*----- ABOUT PAGE -------*/  
+    
+    
+    .aboutimg {margin: 15vw 8vw 0vw 5vw;}
+    
+    h5{font-size: 4vw;}
+    p2 {font-size: 2vw;
+        line-height: 2.3vw;}
+    
+    .cvgrid {padding: 5vw 10vw 6vw 10vw;}
+
+    
+/*----- HOLMES PAGE -------*/ 
+    
+    h8{font-size: 4vw;}
+    h2{font-size: 2.7vw;}
+    p{font-size: 2vw;}
+    
+    .holmesgrid {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-areas: 
+        "holmesintro holmespicture holmespicture"
+        "holmes7 holmes7 holmes7"
+        "holmes1 holmes1 museumimg3"
+        "holmes2 holmes2 holmesoldnew"
+        "visualimg1 visualimg2 visualimg2"
+        "holmes3 holmes3 typographyimg"
+        "holmes4 holmes4 holmescolour3"
+        "holmescolour1 holmescolour2 holmescolour2" 
+        "holmes5 holmes5 holmes5"
+        "holmesidea1 holmesidea1 holmesidea1"
+        "holmes6 holmes6 holmes6"
+        "holmes8 holmes8 holmes8"
+        "holmesprototype holmesprototype holmesprototype"
+        "holmes9 holmes9 holmes9"
+        "holmes10 holmes10 holmes10"
+        "holmeswebsite holmeswebsite1 holmeswebsite1"
+        "holmesreflection holmesreflection holmesreflection"
+        "holmes11 holmes11 holmes11";
+    }
+
+    .holmespicture {padding: 8vw 9vw 0vw 2vw;}
+
+    .holmes7 {margin: 8vw 10vw 0vw 10vw;}
+    .museumimg3 {padding: 0vw 7vw 0vw 5vw;}
+
+    .holmes2 {padding: 0vw 1vw 0vw 10vw;}
+    .holmesoldnew {padding: 8vw 10vw 0vw 0vw;}
+
+    .typographyimg {grid-area: typographyimg;
+    padding: 11vw 10vw 0vw 1vw;}
+    
+    .holmes4 {padding: 3vw 0vw 0vw 10vw;}
+    .holmescolour3 {padding: 10vw 10vw 0vw 2vw;}
+
+    .holmes5 {padding: 4vw 10vw 0vw 10vw;}
+    .holmesidea1 {padding: 0vw 12vw 0vw 10vw;}
+
+    .holmes6 {padding: 4vw 10vw 0vw 10vw;}
+    .holmes8 {padding: 1vw 10vw 0vw 10vw; text-align: center;}
+    .holmesprototype {padding: 4vw 10vw 0vw 10vw; }
+
+    .holmes9 {padding: 4vw 10vw 0vw 10vw;}
+    .holmes10 {padding: 1vw 10vw 2vw 10vw; text-align: center;}
+
+    .holmesreflection {grid-area: holmesreflection;
+        margin: 5vw 10vw 0vw 10vw;}
+    .holmes11 {grid-area: holmes11;
+        padding: 1vw 10vw 6vw 10vw; text-align: center;}
+    
+    .video1{
+    width: 100%;
+    height: auto;}
+    
+/*----- UXPERT PAGE -------*/  
+    
+    .button {
+    margin-top: 25px;
+    padding: 1.5vw 4vw;
+    font-size: 2.5vw;
+    border-radius: 25px;} 
+    
+    hr.style5 {width: 300px;}
+    
+    .uxpertgrid {
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-areas: 
+        "uxpertintro uxpertpicture uxpertpicture"
+        "uxpert1 uxpert1 uxpert1"
+        "uxpert2 uxpert2 monzoimg"
+        "uxpert3 uxpert3 uxpert3"
+        "uxpert5 uxpert5 uxpert5"
+        "uxpert11 uxpert11 uxpert11"
+        "uxpert111 uxpert111 survey"
+        "persona persona cardsort"
+        "uxpert6 uxpert6 additionimg"
+        "uxpert61 uxpert61 uxpert61"
+        "uxpert7 uxpert7 forest"
+        "uxpert14 uxpert14 pattern2"
+        "patterninspo patterninspo pattern1" 
+        "uxpert8 uxpert8 pattern"
+        "uxpert12 uxpert12 uxpertbrand"
+        "uxpert9 uxpert9 uxpertflow"
+        "uxpertwireframes elementcollage elementcollage"
+        "uxpert10 uxpert10 uxpert10"
+        "uxpertprototype uxpertprototype uxpertprototype"
+        "uxpertvideo uxpertvideo uxpertvideo"
+        "uxpertreflection uxpertreflection uxpertreflection"
+        "uxpertreflection2 uxpertreflection2 uxpertreflection2" 
+        "uxpertresearch uxpertresearch uxpertresearch" }
+    
+    .uxpertpicture {padding: 11vw 12vw 0vw 3vw;}
+    .uxpert1{padding: 6vw 10vw 3vw 10vw;}
+    .monzoimg {padding: 0vw 10vw 0vw 1vw;}
+    
+    .uxpert11 {padding: 5vw 10vw 0vw 10vw;}
+    .uxpert111 {padding: 2vw 1vw 0vw 10vw;}
+    .survey {padding: 1vw 10vw 0vw 1vw;}
+    
+    .uxpert6 {padding: 5vw 1vw 0vw 10vw;}
+    .uxpert61 {padding: 2vw 10vw 0vw 10vw;}
+    .additionimg {padding: 6vw 10vw 0vw 0vw;}
+    
+    .forest {padding: 7vw 0vw 0vw 6vw;}
+    .uxpert14 {padding: 5vw 1vw 0vw 10vw;}
+    .pattern2 {padding: 10vw 10vw 0vw 1vw;}
+    .pattern {padding: 5vw 1vw 0vw 1vw;}
+    .uxpert12 {padding: 3vw 1vw 1vw 10vw;}
+    .uxpertbrand {padding: 7vw 10vw 0vw 1vw;}
+    .uxpertflow {padding: 8vw 10vw 0vw 0vw;}
+    
+    .uxpert10 {padding: 6vw 10vw 0vw 10vw;}
+    .uxpertprototype {padding: 0vw 10vw 5vw 10vw; text-align: center;}
+    .uxpertvideo {padding: 0vw 30vw 0vw 10vw;}
+    .uxpertreflection {padding: 6vw 10vw 0vw 10vw;}
+    .uxpertreflection2 {padding: 1vw 10vw 0vw 10vw;}
+    .uxpertresearch {padding: 2vw 10vw 6vw 10vw; text-align: center;}
+    
+    .video{
+    width: 130%;
+    height: auto;}
+    
+/*----- BRANDING PAGE -------*/ 
+    
+    .brandinggrid {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: 
+    "intro1 picture1 picture1"
+    "text2 text2 briefimg"
+    "monogram monogram monogramimg1"
+    "monogramimg2 monogramimg3 monogramimg3"
+    "monogramimg4 monogramimg5 monogramimg5"
+    "wordmark wordmark wordmarkimg1"
+    "wordmarkimg2 wordmarkimg3 wordmarkimg3"
+    "wordmarkimg4 wordmarkimg5 wordmarkimg5"
+    "visualmark visualmark visualmarkimg1"
+    "visualmarkimg2 visualmarkimg3 visualmarkimg3"
+    "visualmarkimg4 visualmarkimg5 visualmarkimg5"
+    "visualextension visualextension visualextensionimg1"
+    "visualextensionimg2 visualextensionimg3 visualextensionimg3"
+    "brandguidelines brandguidelines brandguidelinesimg"
+    "brandguidelinesbtn brandguidelinesbtn brandguidelinesimg"
+    "reflection1 reflection1 reflection1"
+    "researchnotes researchnotes researchnotes";
+    }
+
+    .briefimg {padding: 10vw 14vw 0vw 2vw;}
+    .monogramimg1 {padding: 15vw 12vw 0vw 3vw;}
+    .wordmarkimg1 {padding: 15vw 4vw 0vw 3vw;}
+    .visualmarkimg1 {padding: 14vw 7vw 0vw 4vw;}
+    .brandguidelinesimg {padding: 8vw 10vw 0vw 0vw;}
+    .reflection1 {margin: 5vw 10vw 0vw 10vw;}
+    .researchnotes {padding: 1vw 10vw 6vw 10vw; text-align: center;}
+
+    
+/*----- SIDE PROJ PAGE -------*/ 
+
+    
+    .sideproj_grid {
+    display: grid;
+    padding: 100px 100px 50px 50px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "project_scaffold project_illustrations"
+    "project_leadtheway project_bingo"
+    "project_sbdtent project_sbdposter"; }
+    
+    .project_img2 {height: 410px;}
+    .project_info2 {padding: 15px 0px; }
+    .project_heading2 {padding: 0px 15px;}
+
+    .illustrationimg {padding-top: 5vw;}
+    .leadthewayimg1 {padding-top: 5vw;}
+    
+    #overlay {height: 55vw;}
+    #overlay2 {height: 55vw;}
+    #overlay3 {height: 55vw;}
+    #overlay4 {height: 55vw;}
+    #overlay5 {height: 55vw;}
+    #overlay6 {height: 55vw;}
+
+    
+    .scaffold{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "scaffoldtext scaffoldimg1"}
+
+    .scaffoldimg1 {padding-top: 3vw; padding-left: 3vw;}
+
+    
+    .digitalillustrations{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "illustrationtext illustrationimg"}
+
+    .illustrationimg {padding-top: 0vw; 
+    padding-left: 3vw;
+    padding-right: 0vw;}
+
+
+    .leadtheway{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "leadthewaytext leadthewayimg1"}
+
+    .leadthewayimg1 {padding-top: 0vw;
+    padding-left: 3vw;}
+
+
+    .bingo{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "bingotext bingoimg1"}
+
+    .bingoimg1 {padding-top: 0vw;
+    padding-left: 3vw;
+    padding-right: 0vw;}
+
+
+    .sbd{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas:
+    "sbdtext sbdimg1"}
+
+    .sbdimg1 {padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 0vw;}
+
+    .sbd2{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "sbd2text sbd2img"}
+
+    .sbd2img {padding-left: 2vw;}
+    
+/*-------------------- MEDIA QUERIES - MOBILE ----------------------*/  
+    
+@media screen and (max-width: 600px) {
+    
+    
+/*----- HOME PAGE -------*/ 
+    
+    
+    .navlogoimg {width: 125%;}
+    .navlinks {font-size: 7vw; padding-top: 12px;}
+    
+    .homegrid {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "title";}
+
+    .title {padding:35vw 8vw;}
+
+    h3 {font-size: 12vw;
+    margin-left: 1vw;}
+    h1 {font-size: 22.9vw;
+        padding: 3vw 0vw 3vw 0vw;}
+
+    h4 {font-size: 6vw;
+        line-height: 7vw;
+        margin-left: 2vw;}
+
+    .homebutton {
+        margin: 15vw 10vw 15vw 0vw;
+        padding: 3.5vw 9vw;
+        font-size: 6.5vw;} 
+
+    h6{font-size: 5vw;
+    line-height: 6vw;}
+    h7 {font-size: 10vw;}
+    
+    .work_grid {
+    display: grid;
+    margin: 80px 8vw 80px 8vw;
+    grid-template-columns: 100%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "project_uxpert"
+    "project_holmes"
+    "project_branding"
+    "project_sideproj"
+    "moreprojects";}
+
+    .project_img {height: 220px;}
+    .project_info {height: 80px;}
+    
+    .footergrid{
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "email" "icons"}
+
+    .email {
+        grid-area:email;
+        padding: 30px;}
+
+    .emailtext{font-size: 8vw;}
+
+    .icons {
+        grid-area: icons;
+        padding: 20px 10px 40px 10px;}
+
+    .fa {
+        font-size: 20px;
+        width: 20px;}
+    
+    .footergrid{padding: 0vw 5vw 0vw 5vw;}
+    
+/*----- ABOUT -------*/ 
+    
+    .aboutgrid {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "title";}
+
+    #aboutbutton {
+    margin-right: 15vw;}
+    
+    .cvgrid {
+    padding: 12vw 8vw 12vw 8vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    
+    "title2 title2"
+    "date3 date3" 
+    "content3 content3" 
+    "title1 title1"
+    "date1 date1"
+    "content1 content1"
+    "date7 date7"
+    "content7 content7"
+    "date2 date2"
+    "content2 content2"
+    "title3 title4"
+    "content5 content6"
+    "button2 button2";
+    }
+    
+    h2{font-size: 8vw;
+        line-height: 10vw;}
+    p{font-size: 6vw;
+        line-height: 7vw;}
+    p2 {font-size: 6vw;
+        line-height: 6.5vw;}
+
+    .title1 {margin: 8vw 0vw 1vw 0vw;}
+    .date1 {padding: 2vw 0vw 0vw 0vw;}
+    .content1 {padding: 2vw 5vw 8vw 0vw;}
+    .title2 {margin: 0vw 0vw 0vw 0vw;}
+    .date2 {padding: 8vw 0vw 0vw 0vw;}
+    .content2 {padding: 2vw 0vw 0vw 0vw;}
+    .date7 {padding: 2vw 0vw 0vw 0vw;}
+    .content7 {padding: 2vw 0vw 0vw 0vw;}
+    .date3 {padding: 2vw 0vw 0vw 0vw;}
+    .content3 {padding: 2vw 0vw 0vw 0vw;}
+    .title3 {margin: 8vw 0vw 1vw 0vw;}
+    .content5 {padding-left: 0vw;}
+    .title4 {margin: 8vw 0vw 1vw 0vw;}
+    .content6 {padding-left: 0vw;}
+
+    
+    
+/*----- UXPERT PAGE -------*/ 
+    
+    .titles{font-size: 14vw;}
+    hr.style5 {width: 300px;}
+    
+    .button {
+    margin-top: 0px;
+    padding: 3.5vw 9vw;
+    font-size: 6.5vw;} 
+    
+    h5{font-size: 12vw;}
+    h8{font-size: 10vw;}
+    
+
+    .uxpertgrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "uxpertpicture"
+        "uxpertintro"
+        "uxpert1"
+        "uxpert2"
+        "monzoimg"
+        "uxpert3"
+        "uxpert5"
+        "uxpert11"
+        "uxpert111"
+        "survey"
+        "persona"
+        "cardsort"
+        "uxpert6"
+        "uxpert61"
+        "additionimg"
+        "uxpert7"
+        "forest"
+        "uxpert14"
+        "pattern2"
+        "patterninspo"
+        "pattern1" 
+        "uxpert8"
+        "pattern"
+        "uxpert12"
+        "uxpertbrand"
+        "uxpert9"
+        "uxpertflow"
+        "uxpertwireframes"
+        "elementcollage"
+        "uxpert10"
+        "uxpertprototype"
+        "uxpertvideo"
+        "uxpertreflection"
+        "uxpertreflection2"
+        "uxpertresearch" 
+    }
+
+    .uxpertintro {padding: 0vw 8vw 6vw 0vw;text-align: center;}
+    .uxpertpicture {padding: 24vw 10vw 0vw 10vw; text-align: center; height: 230px;}
+    .uxpert1{padding: 6vw 8vw 3vw 8vw;}
+    .uxpert2 {padding: 0vw 8vw 6vw 8vw;}
+    .monzoimg {padding: 0vw 15vw 6vw 15vw;}
+    .uxpert3 {padding: 0vw 8vw 0vw 8vw;}
+    .uxpert5 {padding: 5vw 8vw 0vw 8vw;}
+    .uxpert6 {padding: 5vw 8vw 0vw 8vw;}
+    .uxpert61 {padding: 5vw 8vw 0vw 8vw;}
+    .additionimg {padding: 5vw 11vw 0vw 8vw;}
+    .uxpert11 {padding: 6vw 8vw 0vw 8vw;}
+    .uxpert111 {padding: 4vw 8vw 0vw 8vw;}
+    .survey {padding: 6vw 11vw 0vw 8vw;}
+    .cardsort {padding: 2vw 10vw 0vw 8vw;}
+    .persona {padding: 2vw 25vw 0vw 8vw;}
+    .uxpert7 {padding: 6vw 8vw 0vw 8vw;}
+    .forest {padding: 6vw 8vw 0vw 33vw;}
+    .uxpert14 {padding: 6vw 8vw 0vw 8vw;}
+    .pattern2 {padding: 5vw 8vw 0vw 8vw;}
+    .patterninspo {padding: 2vw 13vw 0vw 8vw;}
+    .pattern1 {padding: 2vw 8vw 0vw 8vw;}
+    .uxpert8 {padding: 6vw 8vw 0vw 8vw;}
+    .pattern {padding: 2vw 8vw 0vw 22vw;}
+    .uxpert12 {padding: 0vw 8vw 0vw 8vw;}
+    .uxpertbrand {padding: 3vw 8vw 0vw 8vw;}
+    .uxpert9 {padding: 4vw 8vw 0vw 8vw;}
+    .uxpertflow {padding: 3vw 12vw 0vw 8vw;}
+    .uxpertwireframes {padding: 2vw 22vw 0vw 8vw;}
+    .elementcollage {padding: 2vw 12vw 0vw 8vw;}
+    .uxpert10 {padding: 6vw 8vw 0vw 8vw;}
+    .uxpertprototype {padding: 0vw 8vw 0vw 8vw; text-align: center;}
+    .uxpertvideo {padding: 8vw 17vw 0vw 8vw;}
+    .uxpertreflection {padding: 6vw 8vw 0vw 8vw;}
+    .uxpertreflection2 {padding: 5vw 8vw 6vw 8vw;}
+    .uxpertresearch {padding: 0vw 8vw 6vw 8vw; text-align: center;}
+    .video{width: 110%; height: auto;}
+    
+    
+/*----- HOLMES PAGE -------*/    
+    
+    
+    .holmesgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "holmespicture"
+    "holmesintro"
+    "holmes7"
+    "holmes1"
+    "museumimg3"
+    "holmes2"
+    "holmesoldnew"
+    "visualimg1"
+    "visualimg2"
+    "holmes3"
+    "typographyimg"
+    "holmes4"
+    "holmescolour3"
+    "holmescolour1"
+    "holmescolour2" 
+    "holmes5"
+    "holmesidea1"
+    "holmes6"
+    "holmes8"
+    "holmesprototype"
+    "holmes9"
+    "holmes10"
+    "holmeswebsite"
+    "holmeswebsite1"
+    "holmesreflection"
+    "holmes11" ;
+    }
+
+    .holmesintro{padding: 0vw 8vw 6vw 0vw; text-align: center;}
+    .holmespicture {padding: 20vw 7vw 0vw 7vw; text-align: center; height: 250px;}
+
+    .holmes7 {margin: 6vw 8vw 0vw 8vw;}
+    .holmes1 {margin: 3vw 8vw 0vw 8vw;}
+    .museumimg3 {padding: 6vw 8vw 6vw 24vw;}
+
+    .holmes2 {padding: 0vw 8vw 0vw 8vw;}
+    .holmesoldnew {padding: 5vw 8vw 0vw 8vw;}
+    .visualimg1 {padding: 2vw 20vw 0vw 8vw;}
+    .visualimg2 {padding: 2vw 7vw 0vw 8vw;}
+
+    .holmes3 {padding: 6vw 8vw 0vw 8vw;}
+    .typographyimg {padding: 6vw 8vw 6vw 8vw;}
+
+    .holmes4 {padding: 3vw 8vw 0vw 8vw;}
+    .holmescolour1 {padding: 2vw 19vw 0vw 8vw;}
+    .holmescolour2 {padding: 2vw 10vw 0vw 8vw;}
+    .holmescolour3 {padding: 4vw 8vw 0vw 8vw;}
+
+    .holmes5 {padding: 6vw 8vw 0vw 8vw;}
+    .holmesidea1 {padding: 0vw 12vw 0vw 8vw;}
+
+    .holmes6 {padding: 6vw 8vw 0vw 8vw;}
+    .holmes8 {text-align: center; padding: 6vw 0vw 8vw 0vw;}
+    .holmesprototype {padding: 0vw 8vw 0vw 8vw;}
+
+    .holmes9 {padding: 6vw 8vw 0vw 8vw;}
+    .holmes10 {padding: 6vw 0vw 8vw 0vw; text-align: center;}
+    .holmeswebsite {padding: 0vw 18vw 0vw 8vw;}
+    .holmeswebsite1 {padding: 2vw 8vw 0vw 8vw;}
+
+    .holmesreflection {margin: 6vw 8vw 6vw 8vw;}
+    .holmes11 {text-align: center; padding: 0vw 0vw 8vw 0w;}
+
+    .video1{width: 100%;height: auto;}
+
+    
+/*----- BRANDING PAGE -------*/  
+    
+    
+    .brandinggrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "picture1"
+    "intro1"
+    "text2"
+    "briefimg"
+    "monogram"
+    "monogramimg1"
+    "monogramimg2"
+    "monogramimg3"
+    "monogramimg4"
+    "monogramimg5"
+    "wordmark"
+    "wordmarkimg1"
+    "wordmarkimg2"
+    "wordmarkimg3"
+    "wordmarkimg4"
+    "wordmarkimg5"
+    "visualmark"
+    "visualmarkimg1"
+    "visualmarkimg2"
+    "visualmarkimg3"
+    "visualmarkimg4"
+    "visualmarkimg5"
+    "visualextension"
+    "visualextensionimg1"
+    "visualextensionimg2"
+    "visualextensionimg3"
+    "brandguidelines"
+    "brandguidelinesbtn"
+    "brandguidelinesimg"
+    "reflection1"
+    "researchnotes";
+    }
+
+    
+    .intro1 {padding: 0vw 8vw 6vw 0vw; text-align: center; }
+    .picture1 {padding: 16vw 0vw 0vw 0vw; text-align: center; height: 280px;}
+
+    .text2 {margin: 6vw 8vw 0vw 8vw;}
+    .briefimg {padding: 6vw 12vw 0vw 8vw;}
+
+    .monogram {padding: 6vw 8vw 0vw 8vw;}
+    .monogramimg1 {padding: 6vw 20vw 0vw 20vw; text-align: center;}
+    .monogramimg2 {padding: 6vw 20vw 0vw 8vw;}
+    .monogramimg3 {padding: 2vw 11vw 0vw 8vw;}
+    .monogramimg4 {padding: 2vw 22vw 0vw 8vw;}
+    .monogramimg5 {padding: 2vw 11vw 0vw 8vw;}
+
+    .wordmark {padding: 6vw 8vw 0vw 8vw;}
+    .wordmarkimg1 {padding: 6vw 8vw 0vw 8vw;text-align: center;}
+    .wordmarkimg2 {padding: 4vw 22vw 0vw 8vw;}
+    .wordmarkimg3 {padding: 2vw 11vw 0vw 8vw;}
+    .wordmarkimg4 {padding: 2vw 22vw 0vw 8vw;}
+    .wordmarkimg5 {padding: 2vw 11vw 0vw 8vw;}
+
+    .visualmark {padding: 6vw 8vw 0vw 8vw;}
+    .visualmarkimg1 {padding: 6vw 8vw 0vw 8vw;text-align: center;}
+    .visualmarkimg2 {padding: 2vw 22vw 0vw 8vw;}
+    .visualmarkimg3 {padding: 2vw 12vw 0vw 8vw;}
+    .visualmarkimg4 {padding: 1vw 23vw 0vw 8vw;}
+    .visualmarkimg5 {padding: 1vw 12vw 0vw 8vw;}
+
+    .visualextension {padding: 6vw 8vw 0vw 8vw;}
+    .visualextensionimg1 {margin: 4vw 12vw 0vw 8vw;}
+    .visualextensionimg2 {margin:2vw 21vw 0vw 8vw;}
+    .visualextensionimg3 {margin: 2vw 12vw 0vw 8vw;}
+
+    .brandguidelines {padding: 6vw 8vw 0vw 8vw;}
+    .brandguidelinesbtn {padding: 6vw; text-align: center;}
+    .brandguidelinesimg {padding: 0vw 12vw 0vw 8vw;}
+
+    .reflection1 {margin: 6vw 8vw 6vw 8vw;}
+    .researchnotes {padding: 0vw 0vw 8vw 0vw; text-align: center;}
+    
+    
+    
+/*----- SIDE PROJECTS PAGE -------*/  
+    
+    
+    
+    .sideproj_grid {
+    display: grid;
+    padding: 20vw 8vw 8vw 8vw;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "project_scaffold"
+    "project_illustrations"
+    "project_leadtheway"
+    "project_bingo"
+    "project_sbdtent"
+    "project_sbdposter"; }
+
+    .project_scaffold{grid-area: project_scaffold;}
+    .project_illustrations {grid-area: project_illustrations;}
+    .project_leadtheway {grid-area: project_leadtheway;}
+    .project_bingo {grid-area: project_bingo;}
+    .project_sbdtent {grid-area: project_sbdtent;}
+    .project_sbdposter {grid-area: project_sbdposter;}
+
+    .project_img2 {height: 300px;}
+    .project_info2 {padding: 20px 0px; }
+    .project_heading2 {padding: 0px 20px;}
+
+    
+    #overlay {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    #overlay2 {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    #overlay3 {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    #overlay4 {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    #overlay5 {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    #overlay6 {
+    height: 145vw;
+    margin-top: 15vw;
+    left: 8vw;
+    width: 84%;}
+    
+    .scaffold{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "scaffoldtext"}
+    
+    .scaffoldimg1{padding-left:0vw;}
+
+    .digitalillustrations{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "illustrationtext"}
+
+    .illustrationimg{padding-top: 4vw; padding-left: 0vw;}
+
+
+    .leadtheway{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "leadthewaytext"}
+
+    .leadthewayimg1 {padding-top: 5vw; padding-left: 0vw;}
+
+
+    .bingo{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "bingotext"}
+
+    .bingoimg1 {padding-top: 4vw; padding-right: 0vw; padding-left: 0vw;}
+
+
+    .sbd{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "sbdtext"}
+
+    .sbdimg1 {grid-area: sbdimg1;
+    padding-top: 4vw;
+    padding-left: 0vw;}
+
+    .sbd2{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 6vw 6vw;
+    grid-template-areas: 
+    "sbd2text"
+    }
+
+    .sbd2img {grid-area: sbd2img;
+    padding-top: 4vw;
+    padding-left: 0vw;}
